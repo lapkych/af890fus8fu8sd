@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MSC Team — Temporary</title>
+<title>MSC Team — Not Official</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -95,7 +95,7 @@ body::after {
     z-index: -1;
 }
 
-/* LOGO — ONLY YOUR FILE */
+/* LOGO */
 .logo {
     width: 170px;
     margin-bottom: 35px;
@@ -145,6 +145,25 @@ p {
     opacity: 0.9;
 }
 
+/* CUSTOM SITE LINK */
+.site-link {
+    color: #ff2a2a;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.08);
+    box-shadow: 0 0 15px rgba(255,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+.site-link:hover {
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(255,0,0,1);
+}
+
 /* CTA */
 .discord {
     position: relative;
@@ -161,25 +180,6 @@ p {
         0 0 35px rgba(255,0,0,0.9),
         inset 0 0 20px rgba(255,255,255,0.25);
     transition: all 0.35s ease;
-    overflow: hidden;
-}
-
-.discord::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.4),
-        transparent
-    );
-    transform: translateX(-100%);
-}
-
-.discord:hover::before {
-    transform: translateX(100%);
-    transition: transform 0.7s ease;
 }
 
 .discord:hover {
@@ -208,7 +208,6 @@ footer {
 <div class="container">
     <div class="card">
 
-        <!-- YOUR LOGO ONLY -->
         <img src="image_sex.png" alt="MSC Logo" class="logo">
 
         <h1>MSC TEAM</h1>
@@ -218,7 +217,8 @@ footer {
 
         <p>
             This is a NOT official page of <strong>MSC Team</strong>.<br>
-            The official website is <a href="https://mscprime.ru" target="_blank">mscprime.ru</a><br>
+            The official website is 
+            <a href="https://mscprime.ru" target="_blank" class="site-link">mscprime.ru</a><br>
             Join our Discord server to stay connected.
         </p>
 
